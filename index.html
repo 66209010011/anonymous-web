@@ -637,11 +637,12 @@ shareLinkInput.value = currentUrl;
                     }
 
                     const newComment = {
-                        id: Date.now(),
-                        text: commentText,
-                        timestamp: new Date().toISOString(),
-                        avatar: getRandomEmoji()
+                          id: "ผู้ใช้ไม่ระบุชื่อ",
+                          text: commentText,
+                          timestamp: new Date().toISOString(),
+                          avatar: getRandomEmoji()
                     };
+
 
                     message.comments.push(newComment);
                     saveMessages();
